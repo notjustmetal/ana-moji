@@ -29,7 +29,7 @@ h4 {
 }
 
 hr {
-	width: 400px;
+	max-width: 400px;
 	height: 3px;
 	color: #6324FF;
 	background-color: #6324FF;
