@@ -1,14 +1,23 @@
 <% include ./partials/header %>
-  	<div class="container" id="content">
+  	<div class="container window" id="content">
   		<h1 class="welcomeText">Welcome to <span class="logoText">ana-moji!</span></h1>
   		<p class="landingDesc">An application that analayzes faces and provides information through emojis!</p>
   		<p class="landingDesc">Paste an image url below and see the results!</p>
   		<hr>
 
-		<form action="/results" method="GET">
-			<input type="text" name="image" placeholder="Enter Image URL here." id="inputBox" required>
-			<br>
-			<input type="submit" class="btn btn-primary submitButton">
-		</form>
+			<form action="/results" method="GET">
+				<input type="text" name="image" placeholder="Enter Image URL here." id="inputBox" required>
+				<br>
+				<input type="submit" class="btn btn-primary submitButton">
+			</form>
   	</div>
+
+  	 <div class="navbar">
+    	<div class="container footer d-flex justify-content-center">
+    		<h6><span>A page by Abrar Bhuiyan.<span>
+    			<a href="https://github.com/notjustmetal" target="_blank"><i class="fab fa-github d-inline-block align-top"></i></a> 
+    			<a href="https://www.linkedin.com/in/abrar-bhuiyan" target="_blank"><i class="fab fa-linkedin d-inline-block align-top"></i></a>
+    		</h6>
+    	</div>
+    </div>
 <% include ./partials/footer %>

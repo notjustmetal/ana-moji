@@ -211,9 +211,12 @@ hr {
 
 .footer { 
 	color: white;
+	margin-top: 10%;
+	animation: slideIn 2s ease-in;
 }
 
 .footer a {
 	color: #6324FF;
 	font-size: 1.2rem;
 }
+
