@@ -1,6 +1,6 @@
 # ana-moji
 
-> Node.js facial analyzing web application built with Microsoft Face API.
+> Node.js facial recognition web application built with Microsoft Face API.
 
 ![ana-moji](https://github.com/notjustmetal/ana-moji/blob/master/public/splash.png)
 
