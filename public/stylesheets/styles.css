@@ -1,0 +1,219 @@
+body {
+	background: #6324FF;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #DD94FF, #6324FF);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #DD94FF, #6324FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: url('../images/background.png') center;
+	background-size: cover;
+	background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+	font-family: 'Days One', sans-serif;
+}
+
+html {
+	height: 100%;
+}
+
+ul {
+	padding-top: 10%;
+	padding-right: 3%;
+}
+
+h5 {
+	color: #6324FF
+}
+
+h4 {
+	text-transform: uppercase;
+	color: #9D24FF;
+}
+
+hr {
+	width: 400px;
+	height: 3px;
+	color: #6324FF;
+	background-color: #6324FF;
+	border: none;
+	border-radius: 30px;
+	position: relative;
+	animation: slideIn 0.8s ease-in;
+}
+
+.image-parent {
+	max-width: 30px;
+}
+
+.emotion-list {
+	padding: 10px;
+}
+
+@keyframes progress {
+	from {
+		width: 0;
+  	}
+  	to {
+    	width: 100%;
+ 	 }
+} 
+
+.progress-bar {
+  	width: 0;
+  	animation: progress 2.0s ease-in-out forwards;
+}
+
+#logo {
+	color: white;
+	font-family: 'Oleo Script', cursive;
+	font-size: 2em;
+}
+
+#content {
+	text-align: center;
+	padding-top: 10%;
+}
+
+#inputBox {
+	width: 50%;
+	border: 0px solid;
+	border-radius: 4px;
+	text-align: center;
+	box-shadow: none;
+	outline: none;
+	position: relative;
+	animation: slideIn 1s ease-in;
+}
+
+.welcomeText {
+	color: white;
+	font-size: 5em;
+	font-family: 'Oleo Script', cursive;
+	position: relative;
+	animation: slideIn 0.6s ease-in;
+}
+
+.landingDesc {
+	color: #FFDFE0;
+	position: relative;
+	animation: slideIn 0.7s ease-in;
+}
+
+.submitButton {
+	margin-top: 10px;
+	outline: none;
+	border: none;
+	background-color: #6324FF;
+	position: relative;
+	animation: slideIn 1s ease-in;
+}
+
+.submitButton:hover {
+	background-color: #9D24FF;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes slideIn {
+	from {
+		bottom: -300px;
+		opacity: 0;
+	}
+	to {
+		bottom: 0;
+		opacity: 1;
+	}
+}
+
+.resultsCard {
+	/*background-color: transparent;*/
+	border: none;
+	max-width: 22rem;
+	max-height: 40rem;
+	border-radius: 50px;
+}
+
+.emotionImage {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10%;
+}
+
+.resultsDisplay {
+	text-align: center;
+}
+
+.uploadImage {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50px 50px 0px 0px;
+}
+
+.mainWindow {
+	padding-top: 10%;
+}
+
+.displayCard {
+	max-width: 22rem;
+	max-height: 40rem;
+	text-align: center;
+	border: none;
+	border-radius: 50px;
+	min-width: 13rem;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.card1 {
+	animation: slideIn 0.5s ease-in;
+}
+
+.card2 {
+	animation: slideIn 0.6s ease-in;
+}
+
+.card3 {
+	animation: slideIn 0.7s ease-in;
+}
+
+.card4 {
+	animation: slideIn 0.8s ease-in;
+}
+
+
+.resultsWindow {
+}
+
+.errorDesc {
+	color: #FFDFE0;
+	position: relative;
+}
+
+.errorButton {
+	margin-top: 10px;
+	outline: none;
+	border: none;
+	background-color: #6324FF;
+	position: relative;
+}
+
+
+.errorButton:hover {
+	background-color: #9D24FF;
+}
+
+.footer { 
+	color: white;
+}
+
+.footer a {
+	color: #6324FF;
+	font-size: 1.2rem;
+}

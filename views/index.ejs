@@ -1,0 +1,14 @@
+<% include ./partials/header %>
+  	<div class="container" id="content">
+  		<h1 class="welcomeText">Welcome to <span class="logoText">ana-moji!</span></h1>
+  		<p class="landingDesc">An application that analayzes faces and provides information through emojis!</p>
+  		<p class="landingDesc">Paste an image url below and see the results!</p>
+  		<hr>
+
+		<form action="/results" method="GET">
+			<input type="text" name="image" placeholder="Enter Image URL here." id="inputBox" required>
+			<br>
+			<input type="submit" class="btn btn-primary submitButton">
+		</form>
+  	</div>
+<% include ./partials/footer %>

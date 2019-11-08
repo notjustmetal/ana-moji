@@ -1,0 +1,100 @@
+<% include ./partials/header %>
+  	<div class="container resultsWindow d-flex justify-content-center">
+  		<div class="card-deck mx-auto">
+  			<div class="card displayCard card1">
+  				<img src="<%= imageUrl %>" class="card-image-top uploadImage">
+  				<div class="card-body">
+  					<h5>Your uploaded image.</h5>
+  				</div>
+  			</div>
+  			<div class="card displayCard card2">
+  				<img src="<%= results.emoji %>" class="card-image-top emotionImage">
+  				<div class="card-body">
+  					<h5>Your primary emotion in this image is:</h5>
+  					<h4><%= results.emojiText %></h4>
+  				</div>
+  			</div>
+  			<div class="card displayCard card3">
+  				<!-- Emotion List -->
+	    		<ul class="list-unstyled">
+					<li class="media emotion-list">
+						<img src="/images/anger.png" class="mr-3 image-parent">
+						<div class="media-body align-self-center">
+							<div class="progress local-progress">
+	  							<div class="progress-bar" role="progressbar" style="max-width: <%= results.emotion.anger %>%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</li>
+					<li class="media emotion-list">
+						<img src="/images/contempt.png" class="mr-3 image-parent">
+						<div class="media-body align-self-center">
+							<div class="progress">
+	  							<div class="progress-bar" role="progressbar" style="max-width: <%= results.emotion.contempt %>%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</li>
+					<li class="media emotion-list">
+						<img src="/images/disgust.png" class="mr-3 image-parent">
+						<div class="media-body align-self-center">
+							<div class="progress">
+	  							<div class="progress-bar" role="progressbar" style="max-width: <%= results.emotion.disgust %>%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</li>
+					<li class="media emotion-list">
+						<img src="/images/fear.png" class="mr-3 image-parent">
+						<div class="media-body align-self-center">
+							<div class="progress">
+	  							<div class="progress-bar" role="progressbar" style="max-width: <%= results.emotion.fear %>%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</li>
+					<li class="media emotion-list">
+						<img src="/images/happiness.png" class="mr-3 image-parent">
+						<div class="media-body align-self-center">
+							<div class="progress">
+	  							<div class="progress-bar" role="progressbar" style="max-width: <%= results.emotion.happiness %>%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</li>
+					<li class="media emotion-list">
+						<img src="/images/neutral.png" class="mr-3 image-parent">
+						<div class="media-body align-self-center">
+							<div class="progress">
+	  							<div class="progress-bar" role="progressbar" style="max-width: <%= results.emotion.neutral %>%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</li>
+					<li class="media emotion-list">
+						<img src="/images/sadness.png" class="mr-3 image-parent">
+						<div class="media-body align-self-center">
+							<div class="progress">
+	  							<div class="progress-bar" role="progressbar" style="max-width: <%= results.emotion.sadness %>%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</li>
+					<li class="media emotion-list">
+						<img src="/images/surprise.png" class="mr-3 image-parent">
+						<div class="media-body align-self-center">
+							<div class="progress">
+	  							<div class="progress-bar" role="progressbar" style="max-width: <%= results.emotion.surprise %>%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><div>
+	  						<div>
+	  					<div>
+	  				</li>		
+				</ul>
+				<div class="card-body">
+  					<h5>Emotion distribution.</h5>
+  				</div>
+  			</div>
+  			<div class="card displayCard card4">
+  				<img src="<%= results.genderEmoji %>" class="card-image-top emotionImage">
+  				<div class="card-body">
+  					<h5>You appear to be:</h5>
+  					<h4><%= results.gender %></h4>
+  					<h5>Your age is:</h5>
+  					<h4><%= results.age %></h4>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+<% include ./partials/footer %>
