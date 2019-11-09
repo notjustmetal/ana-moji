@@ -10,7 +10,9 @@ ana-moji is a web application that allows users to upload images of faces and re
 and age. This is all displayed to the user through emojis. A current working build can be found 
 [here](https://ana-moji.herokuapp.com/).
 
+<p align="center">
 <img style="display: blocks; margin: auto" src="https://github.com/notjustmetal/ana-moji/blob/master/public/ana-moji-gif1.gif" width=430> <img style="display: blocks; margin: auto" src="https://github.com/notjustmetal/ana-moji/blob/master/public/ana-moji-gif2.gif" width=430>
+</p>
 
 ## Built With
 
